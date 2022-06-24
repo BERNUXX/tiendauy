@@ -54,32 +54,29 @@
             <h2> Registrate</h2>
         </legend>
 
-    <form action="Enviar.php" method="get">
+    <form class="sendRegistro" action="Enviar.php" method="get">
 
-        <div class="nameHolder">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
-        </div>
+        <div class="holderRegistro">
+            <input  class="holder" type="text" id="nombre" placeholder="Ingrese su nombre" required>
         
-        <br>
-
-        <div class="emailHolder">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Ingrese su correo" required>
+            <input class="holder" type="email" id="email" placeholder="Ingrese su correo" required>
+        
+            <input class="holder" type="password" id="pass" placeholder="Crea tu contraseña" required>
         </div>
 
         <br>
 
         <div class="radioBottoms">
-            <div class="generoText">
-                <label for="">Genero</label>
-            </div>
-            <div class="circulos">
-                <input type="radio" name="Genero" id="" required>Hombre
-                <input type="radio" name="Genero" id=""required>Mujer
-                <input type="radio" name="Genero" id=""required>Prefiero no decirlo
-            </div>
-        </div>
+            <ul>
+                Genero
+                <select>
+                    <option disabled>Seleccione</option>
+                    <option>Hombre</option>
+                    <option>Mujer</option>
+                    <option>Prefiero no decirlo</option>
+                </select>
+            </ul>
+        </div>    
 
         <br>
 
@@ -92,12 +89,6 @@
 
         <br>
 
-        <div class="password">
-            <label for="pass">Contraseña</label>
-            <input type="password" id="pass" placeholder="Crea tu contraseña" required>
-        </div>
-
-        <br>
 
         <div class="terminosCondiciones">
             <input type="checkbox" name="Acepto" id="" required>Acepto terminos y condiciones.
