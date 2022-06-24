@@ -150,13 +150,7 @@ header div a {
     /* overflow-anchor: none; */
 }
 
-.bdc .tarjetas .card .cart:hover {
-    width: 299px;
-    opacity: 100%;
-    /* transform: translateX(8px); */
-    /* margin-right: 50px; */
-    /* margin-right: 25px; */
-}
+
 
 .fa-solid, .fas {
     font-family: "Font Awesome 6 Free";
@@ -410,9 +404,9 @@ section .sinCompras .sinComprasText .texto {
         .tarjetas {
             display: grid;
             grid-template-columns: repeat(4,1fr);
-            width: 90%;
+            width: 100%;
             margin: 0 auto;
-    }
+        }
     }   
 
 @media screen and (max-width:1360px) {
@@ -428,7 +422,7 @@ section .sinCompras .sinComprasText .texto {
     .tarjetas {
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         
         
@@ -440,26 +434,36 @@ section .sinCompras .sinComprasText .texto {
 @media screen and (max-width:768px) {
    .tarjetas { 
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        width: 90%;
+        grid-template-columns: repeat(3,1fr);
+        width: 100%;
         margin: 0 auto;
         
 }
         
 }
 
-@media screen and (max-width:700px) {
-    .tarjetas {
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        width: 100%;
-        margin: 0 auto;
-        justify-content: space-evenly;
-        padding-top: 2rem;
-        
-    }
-    
-}
+@media screen and (max-width:425px) {
+    .tarjetas { 
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
+         width: 100%;
+         margin: 0 0;
+         justify-content: space-evenly;
+         
+ }
+         
+ }
+
+ @media screen and (max-width:425px) {
+    .gridIndex { 
+       display: grid;
+       grid-template-columns: 100%;
+         
+ }
+         
+ }
+ 
+
 
 
 
