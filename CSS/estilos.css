@@ -69,7 +69,7 @@ header div a {
 
 .tarjetas {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(4,1fr);
     /* line-height: 1px; */
     /* text-align: center; */
     width: 90wp;
