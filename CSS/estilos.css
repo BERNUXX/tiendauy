@@ -287,7 +287,15 @@ section .sinCompras .sinComprasText .texto {
     margin: auto;
 
 }
+.bcColor {
+    width:100%;
+    height: 100vh;
+    background-color: skyblue;
 
+}
+ .form-control {
+    margin-top: 10px;
+ }
 
 
 
@@ -381,7 +389,7 @@ section .sinCompras .sinComprasText .texto {
 
     }
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width:800px) { /* t */
     
     .pie-pagina .grupo-1{
         width: 90%;
@@ -392,7 +400,7 @@ section .sinCompras .sinComprasText .texto {
     .pie-pagina .grupo-1 .box {
         margin-left: 30px;
     }
-
+}
  
 
  
@@ -405,14 +413,7 @@ section .sinCompras .sinComprasText .texto {
         }
     }   
 
-@media screen and (max-width:1360px) {
-    .tarjetas {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        width: 90%;
-        margin: 0 auto;
-}
-}   
+ 
 
 @media screen and (max-width:1030px) {  /* cambio a menÃº hamburguesa */
     .tarjetas {
@@ -438,7 +439,7 @@ section .sinCompras .sinComprasText .texto {
         
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:700px) {
     .tarjetas { 
          display: grid;
          grid-template-columns: repeat(2,1fr);
@@ -454,6 +455,18 @@ section .sinCompras .sinComprasText .texto {
     .gridIndex { 
        display: grid;
        grid-template-columns: 100%;
+         
+ }
+         
+ }
+
+ @media screen and (max-width:455px) {
+    .tarjetas { 
+         display: grid;
+         grid-template-columns: repeat(1,1fr);
+         width: 100%;
+         margin: 0 0;
+         justify-content: space-evenly;
          
  }
          
