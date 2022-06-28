@@ -17,10 +17,11 @@ body {
 
 header {
     /* height: 6.25rem; */
-    display: grid;
+    display: flex;
     grid-template-columns: 5% auto auto 5%;
     padding: 0.625rem 0rem;
     background-color: rgb(119, 240, 240);
+    justify-content: space-between;
 }
 
 header div img {
@@ -365,12 +366,17 @@ section .sinCompras .sinComprasText .texto {
 }
 @media screen and (max-width:990px) {
     header {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-auto-rows: 3rem;
-        height: 7.25rem;
-        justify-items: center;
-    background-color: #ffd800;}
+        display: flex;
+        padding: -1rem;
+        /* margin-top: -20px; */
+        /* grid-template-columns: 100%; */
+        /* grid-auto-rows: 3rem; */
+        /* height: 7.25rem; */
+        /* justify-items: center; */
+        background-color: #ffd800;
+        align-items: center;
+        flex-direction: column;
+        }
 
 
 }
