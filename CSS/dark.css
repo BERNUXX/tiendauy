@@ -1,22 +1,26 @@
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Quicksand', sans-serif;
+#modo {
+    width: 30px;
+    position: fixed;
+    margin-left: 30px;
+    bottom: 102px;
+    z-index: 80;
+    cursor:pointer;
+}
+.dark {
+    background-color: rgb(9, 44, 90);
 }
 
-
-
-
-header {
+.dark header {
     display: grid;
     grid-template-columns: 5% auto auto 5%;
     padding: 0.625rem 0rem;
-    background-color: #3AB4F2;
+    background-color: #1e3b9b;
     justify-content: space-between;
 }
 
@@ -34,11 +38,11 @@ header .nave {
     justify-content: flex-end;
 }
 
-.mec {
+.dark .mec {
     margin-inline: 10px;
     display: inline;
     text-decoration: none;
-    color: white;
+    color: rgb(4, 24, 51);
     padding-inline-end: auto;
     --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
@@ -80,6 +84,7 @@ label.bottom{
     height: 0rem;
     margin-bottom: -1rem;
     justify-content: space-around;
+    color: #2b6785;
 }
 
 
@@ -96,14 +101,14 @@ label.bottom{
 }
 
 
-.tarjetas {
+.dark .tarjetas {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     /* line-height: 1px; */
     /* text-align: center; */
     width: 90wp;
     margin: 0 auto;
-    background-color: rgb(33, 157, 189);
+    background-color: rgb(4, 28, 71);
     padding: 1rem;
     padding-top: 3rem;
     border-radius: 0.313rem;
@@ -111,8 +116,8 @@ label.bottom{
     justify-items: center;
 }
 
-.bdc .tarjetas .card{
-    background-color: aliceblue;
+.dark .bdc .tarjetas .card{
+    background-color: rgb(6, 89, 161);
     width: 10.875rem;
     height: 17.500rem;
     border-radius: 0.5rem;
@@ -139,6 +144,7 @@ label.bottom{
 .bdc .tarjetas .card h4{
     font-weight: 1000;
     font-size: 1rem;
+    color: black;
 }
 
 .bdc .tarjetas .card p{
@@ -148,13 +154,13 @@ label.bottom{
     cursor: default;
 }
 
-.bdc .tarjetas .card .price {
+.dark .bdc .tarjetas .card .price {
     height: 56px;
     display: flex;
     font-weight: 800;
     font-size: 25px;
     text-decoration: none;
-    color: #F2DF3A;
+    color: #000000;
     margin-top: -1.2rem;
     /* margin-right: 1rem; */  /* animation */
     transition: all 0.25s;
@@ -163,14 +169,14 @@ label.bottom{
 }
 
 
-.bdc .tarjetas .card .cart {
+.dark .bdc .tarjetas .card .cart {
     width: 173px;
     height: 278px;
     display: flex;
     flex-direction: column-reverse;
     border-radius: 8px;
     font-size: 30px;
-    color: rgb(253 0 0);
+    color: rgb(0, 0, 0);
     position: absolute;
     /* cursor: default; */
     transition: all 0.50s;
@@ -339,9 +345,9 @@ section .sinCompras .sinComprasText .texto {
 
 
 /* Footer*/
-.pie-pagina{
+.dark .pie-pagina{
     width: 100%;
-    background-color: #6dc2f6ff;
+    background-color: #1e3b9b;
     bottom: 0px;
 }
 .pie-pagina .grupo-1{
@@ -393,10 +399,10 @@ section .sinCompras .sinComprasText .texto {
     color: black;
 }
 @media screen and (max-width:990px) {
-    header {
+    .dark header {
         display: flex;
         padding: -1rem;
-        background-color: #3AB4F2;
+        background-color: #1e3b9b;
         align-items: center;
         flex-direction: column;
         }
@@ -449,7 +455,7 @@ section .sinCompras .sinComprasText .texto {
 
  
  @media screen and (max-width:1720px) {
-        .tarjetas {
+        .dark .tarjetas {
             display: grid;
             grid-template-columns: repeat(4,1fr);
             width: 100%;
@@ -460,7 +466,7 @@ section .sinCompras .sinComprasText .texto {
  
 
 @media screen and (max-width:1030px) {  /* cambio a menÃƒÂº hamburguesa */
-    .tarjetas {
+    .dark .tarjetas {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         width: 100%;
@@ -473,7 +479,7 @@ section .sinCompras .sinComprasText .texto {
 
 
 @media screen and (max-width:768px) {
-   .tarjetas { 
+   .dark .tarjetas { 
         display: grid;
         grid-template-columns: repeat(3,1fr);
         width: 100%;
@@ -484,7 +490,7 @@ section .sinCompras .sinComprasText .texto {
 }
 
 @media screen and (max-width:700px) {
-    .tarjetas { 
+    .dark .tarjetas { 
          display: grid;
          grid-template-columns: repeat(2,1fr);
          width: 100%;
@@ -494,10 +500,10 @@ section .sinCompras .sinComprasText .texto {
  }
  
 @media screen and (max-width:598px) {
-    header {
+    .dark header {
         display: flex;
         padding: -1rem;
-        background-color:#3AB4F2;
+        background-color:#1e3b9b;
         align-items: center;
         flex-direction: row;
         height: 6rem;
@@ -506,7 +512,7 @@ section .sinCompras .sinComprasText .texto {
         display:block ;
         cursor: pointer;
     }
-    .nav_menu {
+    .dark .nav_menu {
         position: absolute;
         top: 96px;
         padding: 19px;
@@ -534,7 +540,7 @@ section .sinCompras .sinComprasText .texto {
  
 
  @media screen and (max-width:425px) {
-    .gridIndex { 
+    .dark .gridIndex { 
        display: grid;
        grid-template-columns: 100%;
          
@@ -553,45 +559,3 @@ section .sinCompras .sinComprasText .texto {
  }
          
  }
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
