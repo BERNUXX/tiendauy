@@ -108,16 +108,17 @@ label.bottom{
     /* text-align: center; */
     width: 90wp;
     margin: 0 auto;
-    background-color: rgb(4, 28, 71);
+    background: linear-gradient(90deg, rgb(36 73 115) 6%, rgb(17 31 66) 100%);
     padding: 1rem;
     padding-top: 3rem;
     border-radius: 0.313rem;
     /* align-items: center; */
     justify-items: center;
+    margin-bottom: 2rem;
 }
 
 .dark .bdc .tarjetas .card{
-    background-color: rgb(6, 89, 161);
+    background-color: rgb(71 101 131);
     width: 10.875rem;
     height: 17.500rem;
     border-radius: 0.5rem;
@@ -136,7 +137,7 @@ label.bottom{
 }
 
 .bdc .tarjetas .card img{
-    width: 10rem; /* 220px */
+    width: 10.8rem; /* 220px */
     height: 10rem;/* 220px */
 }
 
@@ -160,7 +161,7 @@ label.bottom{
     font-weight: 800;
     font-size: 25px;
     text-decoration: none;
-    color: #000000;
+    color: #142749;
     margin-top: -1.2rem;
     /* margin-right: 1rem; */  /* animation */
     transition: all 0.25s;
@@ -176,7 +177,7 @@ label.bottom{
     flex-direction: column-reverse;
     border-radius: 8px;
     font-size: 30px;
-    color: rgb(0, 0, 0);
+    color: #142749;
     position: absolute;
     /* cursor: default; */
     transition: all 0.50s;
@@ -460,6 +461,7 @@ section .sinCompras .sinComprasText .texto {
             grid-template-columns: repeat(4,1fr);
             width: 100%;
             margin: 0 auto;
+            margin-bottom: 2rem;
         }
     }   
 
@@ -471,6 +473,7 @@ section .sinCompras .sinComprasText .texto {
         grid-template-columns: repeat(3,1fr);
         width: 100%;
         margin: 0 auto;
+        margin-bottom: 2rem;
         
         
         
@@ -484,8 +487,9 @@ section .sinCompras .sinComprasText .texto {
         grid-template-columns: repeat(3,1fr);
         width: 100%;
         margin: 0 auto;
+        margin-bottom: 2rem;
         
-}
+    }
         
 }
 
@@ -495,8 +499,8 @@ section .sinCompras .sinComprasText .texto {
          grid-template-columns: repeat(2,1fr);
          width: 100%;
          margin: 0 0;
-         justify-content: space-evenly;}
-         
+         justify-content: space-evenly;
+         margin-bottom: 2rem;}
  }
  
 @media screen and (max-width:598px) {
@@ -548,14 +552,4 @@ section .sinCompras .sinComprasText .texto {
          
  }
 
- @media screen and (max-width:455px) {
-    .tarjetas { 
-         display: grid;
-         grid-template-columns: repeat(1,1fr);
-         width: 100%;
-         margin: 0 0;
-         justify-content: space-evenly;
-         
- }
-         
- }
+ 
