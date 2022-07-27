@@ -7,10 +7,14 @@
 #modo {
     width: 30px;
     position: fixed;
-    margin-left: 30px;
-    bottom: 102px;
+    right: 79px;
+    bottom: 57px;
     z-index: 80;
-    cursor:pointer;
+    cursor: pointer;
+}
+#modo .iconModo {
+    width: 3.5rem;
+    height: 3.5rem;
 }
 .dark {
     background-color: rgb(9, 44, 90);
@@ -205,26 +209,30 @@ label.bottom{
 
 /* PAGINA DE REGISTRO */
 
-.fieldsetContenedor {
-    width: 400px;
+.dark .fieldsetContenedor {
+    width: 404px;
+    height: 371px;
     margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    margin-bottom: 50px;
     display: flex;
-    /* padding-block-start: 0.35em; */
+    box-shadow: 0px 0px 10px white;
     padding-inline-start: 0.75em;
     padding-inline-end: 0.75em;
-    /* padding-block-end: 0.625em; */
-    background-color: lightskyblue;
     flex-direction: column;
     align-items: flex-start;
+    background: linear-gradient(90deg, rgb(36 73 115) 6%, rgb(17 31 66) 100%);
+    
 }
 
 
-.sendRegistro .holderRegistro {
+.dark .sendRegistro .holderRegistro {
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: space-around;
-    background-color: skyblue;
+    background: linear-gradient(90deg, rgb(36 73 115) 6%, rgb(17 31 66) 100%);
 }
 .holder {
     background-color: rgb(255, 255, 255);
@@ -288,12 +296,12 @@ section .sinCompras {
     justify-items: center;
 
 }
-section .sinCompras .sinComprasText {
+.dark section .sinCompras .sinComprasText {
     width: 100%;
     height: 100vh;
     border-radius: 5px;
     margin-top: 1rem;
-    background-color: skyblue;
+    background: linear-gradient(90deg, rgb(36 73 115) 6%, rgb(17 31 66) 100%);
     display: grid;
     grid-template-columns: 50% 50%;
     justify-items: center;
@@ -534,15 +542,25 @@ section .sinCompras .sinComprasText .texto {
     input:checked + .nav_menu {
         clip-path: circle(150.1% at 95% 9%);
       }
+    
+    #modo {
+        width: 30px;
+        position: absolute;
+        left: 59px;
+        bottom: 371px;
+        z-index: 80;
+        cursor: pointer;
+    }
+    #modo .iconModo {
+        width: 3rem;
+        height: 3rem;
+    }
 
     
          
  }
          
  
-         
- 
-
  @media screen and (max-width:425px) {
     .dark .gridIndex { 
        display: grid;
@@ -551,5 +569,10 @@ section .sinCompras .sinComprasText .texto {
  }
          
  }
+ @media screen and (max-width:391px) {
+    .dark .bdc .tarjetas .card {
+        margin: 0.25rem;
+    }
+}
 
  
