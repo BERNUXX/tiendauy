@@ -170,13 +170,15 @@ body {
 
 
 .bdc .tarjetas .card .cart {
-    width: 173px;
-    height: 278px;
+    width: 174px;
+    height: 280px;
     display: flex;
     flex-direction: column-reverse;
     border-radius: 8px;
     font-size: 30px;
-    color: #f1df38;
+    /* margin-right: 21px; */
+    margin-left: -1px;
+    color: #e1cc1d;
     position: absolute;
     /* cursor: default; */
     transition: all 0.50s;
@@ -184,6 +186,7 @@ body {
     opacity: 0%;
     /* margin-right: -279px; */
     /* overflow-anchor: none; */
+    align-items: center;
 }
 
 
@@ -199,6 +202,8 @@ body {
 .bdc .tarjetas .card .cart:hover {
     transform: translateX(4.062000000000001rem);
     opacity: 100%;
+    margin-left: -65px;
+    width: 294px;
     
 }
 
