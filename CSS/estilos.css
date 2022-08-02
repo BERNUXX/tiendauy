@@ -328,32 +328,117 @@ section .sinCompras .sinComprasText .texto .textnc {
 }
 
 /* CUENTANOS TU EXPERIENCIA */
-.contenidoExperiencia {
-    width: 18.75rem;
-    height: 136px;
-    display: block;
-    justify-content: space-evenly;
-    margin: auto;
-}
+
 
 /* CATEGORIAS */
-.categorias {
-    width: 18.75rem;
-    height: 136px;
-    display: block;
-    justify-content: space-evenly;
-    margin: auto;
+.titleCat {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    height: auto;
+    font-size: 1.5rem;
+    /* font-weight: 500; */
+    /* font-weight: 700; */
+    margin-top: 57px;
+    justify-content: space-around;
+    color: #2b6785;
+}
+.flexCat {
+    display: grid;
+    width: 100%;
+    height: 300px;
+    grid-template-columns: 10% auto 10%;
+    margin-top: 50px;
+    height: 470px;
+
+    
+    
+}
+.contentFlexCat {
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    padding-top: 50px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, rgba(94,252,232,1) 0%, rgba(115,110,254,1) 100%);
+    justify-items: center;
+    align-items: center;
+    border-radius: 0.313rem;
+}
+
+.cardCat {
+    display: grid;
+    grid-template-rows: auto 20%;
+    width: 90%;
+    height: 180px;
+    background-color: rgb(240, 240, 240);
+    overflow: hidden;
+    justify-items: center;
+    border-radius: 0.313rem;
+    transition: all 0.25s;
+    cursor: pointer;
+}
+.cardCat:hover {
+    box-shadow: 0 12px 16px rgb(0 0 0 / 20%);
+}
+.imgCat {
+    height: 9rem;
+    width: 17rem;
+}
+.textCat {
+    display: flex;
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
 
 }
-.bcColor {
-    width:100%;
+
+/* Experiencia */
+.experiencia {
+    display: grid;
+    grid-template-columns: 10% auto 10%;
     height: 100vh;
-    background-color: skyblue;
+    justify-items: center;
+    align-items: center;
+}
+.experienciaCont  {
+    width: 100%;
+    height: calc(44rem - 17rem);
+    border-radius: 5px;
+    margin-top: 5rem;
+    background: linear-gradient(90deg, rgba(94,252,232,1) 0%, rgba(115,110,254,1) 100%);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+
+    
 
 }
- .form-control {
-    margin-top: 10px;
- }
+.experienciaText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.experienciaImg1 {
+    width: 40rem;
+    height: 29rem;
+    margin-top: -90px;
+}
+
+.experienciaText #email {
+    width: 290px;
+    height: 117px;
+    margin-top: 21px;
+}
+.experienciaText #nombre {
+    width: 290px;
+    height: 38px;
+    margin-top: 21px;
+
+}
 
 
 
@@ -375,7 +460,6 @@ section .sinCompras .sinComprasText .texto .textnc {
 }
 .pie-pagina .grupo-1{
     width: 100%;
-    max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
@@ -516,6 +600,18 @@ section .sinCompras .sinComprasText .texto .textnc {
         margin-bottom: 2rem;
         
     }
+    .contentFlexCat {
+        display: grid;
+        grid-template-columns: repeat(2,3fr);
+        
+        
+    }
+    .cardCat {
+        margin-bottom: 10px;
+    }
+    .flexCat {
+        margin-bottom: 184px;
+    }
         
 }
 
@@ -565,6 +661,14 @@ section .sinCompras .sinComprasText .texto .textnc {
     
          
  }
+ @media screen and (max-width:598px) {
+    .flexCat {
+        margin-bottom: 751px;
+    }
+    .contentFlexCat {
+        grid-template-columns: repeat(1,3fr);
+    }
+ }
          
  
 @media screen and (max-width:425px) {
@@ -580,6 +684,12 @@ section .sinCompras .sinComprasText .texto .textnc {
         margin: 0.25rem;
     }
 }
+@media screen and (max-width:1024px) {
+    .flexCat {
+        grid-template-columns: auto ;
+    }
+}
+
 
 
  

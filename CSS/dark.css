@@ -319,12 +319,8 @@ section .sinCompras .sinComprasText .texto {
 }
 
 /* CUENTANOS TU EXPERIENCIA */
-.contenidoExperiencia {
-    width: 18.75rem;
-    height: 136px;
-    display: block;
-    justify-content: space-evenly;
-    margin: auto;
+.dark .experienciaCont {
+    background: linear-gradient(90deg, rgb(36 73 115) 6%, rgb(17 31 66) 100%);
 }
 
 /* CATEGORIAS */
@@ -366,7 +362,6 @@ section .sinCompras .sinComprasText .texto {
 }
 .pie-pagina .grupo-1{
     width: 100%;
-    max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
@@ -411,6 +406,17 @@ section .sinCompras .sinComprasText .texto {
 }
 .pie-pagina .grupo-1 .red-social a:hover{
     color: black;
+}
+ /* CATEGORÍAS */
+ .dark .contentFlexCat {
+    background: linear-gradient(90deg, rgb(36 73 115) 6%, rgb(17 31 66) 100%);
+}
+.dark .cardCat {
+    background-color: #142749;
+
+}
+.dark .textCat {
+    background-color: #214380;
 }
 @media screen and (max-width:990px) {
     .dark header {
@@ -551,20 +557,18 @@ section .sinCompras .sinComprasText .texto {
         clip-path: circle(150.1% at 95% 9%);
       }
     
-    #modo {
-        width: 30px;
-        position: absolute;
-        left: 59px;
-        bottom: 371px;
-        z-index: 80;
-        cursor: pointer;
-    }
+    
     #modo .iconModo {
         width: 3rem;
         height: 3rem;
+        
+    }
+    #modo {
+        right: 32px;
+        bottom: 32px;
     }
 
-    
+   
          
  }
 
