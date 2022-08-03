@@ -709,6 +709,9 @@ section .sinCompras .sinComprasText .texto .textnc {
     .flexCat {
         grid-template-columns: auto ;
     }
+    .experienciaCont {
+        margin-top: 3rem;
+    }
 }
 @media screen and (max-width:910px) {
     .experienciaImg1 {
@@ -732,7 +735,7 @@ section .sinCompras .sinComprasText .texto .textnc {
     .experienciaCont {
         width: 90%;
         height: calc(44rem - 6rem);
-        margin-top: 2rem;
+        margin-top: -2rem;
     }
     .sendRegistro {
         width: 298px;
