@@ -727,15 +727,16 @@ section .sinCompras .sinComprasText .texto .textnc {
 @media screen and (max-width:776px) {
     .experiencia {
         grid-template-columns: 100%;
-        height: 114vh;
+        height: 100%;
     }
     .experienciaText {
         margin-top: 0.5rem; 
     }
     .experienciaCont {
         width: 90%;
-        height: calc(44rem - 6rem);
-        margin-top: -2rem;
+        height: 39rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
     .sendRegistro {
         width: 298px;
@@ -751,6 +752,12 @@ section .sinCompras .sinComprasText .texto .textnc {
     
     .experienciaCont {
         grid-template-columns: 100%;
+    }
+}
+@media screen and (max-width:425px) {
+    
+    .experienciaCont {
+        margin-top: 1rem;
     }
 }
 
