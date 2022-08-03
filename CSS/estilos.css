@@ -210,21 +210,25 @@ body {
 /* PAGINA DE REGISTRO */
 
 .fieldsetContenedor {
-    width: 404px;
-    height: 371px;
+    padding-top: 80px;
+    width: 90%;
+    height: 455px;
+    display: grid;
+    grid-template-columns: 50% 50%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: -17px;
     border-radius: 10px;
-    margin-bottom: 50px;
-    display: flex;
-    box-shadow: 0px 0px 10px white;
+    margin-bottom: 32px;
     padding-inline-start: 0.75em;
     padding-inline-end: 0.75em;
     background: linear-gradient(90deg, rgba(94,252,232,1) 0%, rgba(115,110,254,1) 100%);
     flex-direction: column;
     align-items: flex-start;
 }
-
+.registroText {
+    font-family: 'Roboto', sans-serif;
+    color: #2b6785;
+}
 
 .sendRegistro .holderRegistro {
     display: flex;
@@ -241,51 +245,25 @@ body {
     margin-top: 3px;
 }
 
-
-
-.radioBottoms {
-    display: inline;
-    width: 12rem;
-    height: 1rem;
+.registroImg {
+    width: 389px;
+    height: 361px;
+    margin-top: 10px;
 }
-.generoText {
-    justify-content: flex-start;
+.sendRegistro {
+    width: 298px;
+    margin-left: 9rem;
+}
+.registroText {
+    font-family: 'Roboto', sans-serif;
+    color: #2b6785;
+    width: 100%;
+    margin-top: 8px;
     display: flex;
-}
-.circulos {
-    width: 18.75rem;
+    justify-content: space-around;
 }
 
-.fechaDeNacimiento {
-    display: inline;
-    width: 12rem;
-    height: 1rem;
-}
 
-.password {
-    display: block;
-    width: 12rem;
-    height: 3rem;
-    margin: auto;
-    margin-top: -1rem;
-}
-
-.terminosCondiciones {
-    display: flex;
-    width: 23rem;
-    height: 2rem;
-    margin-top: 1rem;
-    flex-direction: row;
-    align-items: baseline;
-}
-
-.sendBottom {
-    display: block;
-    width: 3rem;
-    height: 3rem;
-    margin: auto;
-    margin-top: 1rem;
-}
 
 /* Mi Carrito */
 section .sinCompras {
@@ -293,17 +271,19 @@ section .sinCompras {
     grid-template-columns: 10% auto 10%;
     height: 100vh;
     justify-items: center;
+    align-items: center;
 
 }
 section .sinCompras .sinComprasText {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 19rem);
     border-radius: 5px;
-    margin-top: 1rem;
-    background-color: skyblue;
+    margin-top: -14rem;
+    background: linear-gradient(90deg, rgba(94,252,232,1) 0%, rgba(115,110,254,1) 100%);;
     display: grid;
     grid-template-columns: 50% 50%;
     justify-items: center;
+    
 
 }
 .textnc {
@@ -333,7 +313,7 @@ section .sinCompras .sinComprasText .texto .textnc {
 /* CATEGORIAS */
 .titleCat {
     display: flex;
-    position: fixed;
+    position: absolute;
     width: 100%;
     font-family: 'Roboto', sans-serif;
     height: auto;
@@ -408,7 +388,7 @@ section .sinCompras .sinComprasText .texto .textnc {
     width: 100%;
     height: calc(44rem - 17rem);
     border-radius: 5px;
-    margin-top: 5rem;
+    margin-top: -10rem;
     background: linear-gradient(90deg, rgba(94,252,232,1) 0%, rgba(115,110,254,1) 100%);
     display: grid;
     grid-template-columns: 50% 50%;
@@ -421,9 +401,11 @@ section .sinCompras .sinComprasText .texto .textnc {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    color: #2b6785;
 }
 .experienciaImg1 {
-    width: 40rem;
+    width: 37rem;
     height: 29rem;
     margin-top: -90px;
 }
@@ -516,9 +498,16 @@ section .sinCompras .sinComprasText .texto .textnc {
         background-color: #3AB4F2;
         align-items: center;
         flex-direction: column;
-        }
+    }
 
 
+}
+@media screen and (max-width: 990px){
+    section .sinCompras .sinComprasText .texto {
+    width: 19rem;
+    height: auto;
+    margin-top: 1rem;
+}
 }
 @media screen and (max-width:574px) {
     header .nave {
@@ -540,6 +529,7 @@ section .sinCompras .sinComprasText .texto .textnc {
     section .sinCompras .sinComprasText {
         display: grid;
         grid-template-columns: 100%;
+        margin-top: -40rem;
     }
     
 }
@@ -674,9 +664,21 @@ section .sinCompras .sinComprasText .texto .textnc {
 @media screen and (max-width:425px) {
     .gridIndex { 
        display: grid;
-       grid-template-columns: 100%;
+       grid-template-columns: 100%;}
+    
+
+    .fieldsetContenedor {
+        height: 511px;
+        grid-template-columns: 100%;}
+
+    .registroText {
+        font-family: 'Roboto', sans-serif;
+        color: #2b6785;
+         width: 100%;
+         margin-top: -56px;}
+    
          
- }
+ 
          
  }
  @media screen and (max-width:391px) {
@@ -689,6 +691,43 @@ section .sinCompras .sinComprasText .texto .textnc {
         grid-template-columns: auto ;
     }
 }
+@media screen and (max-width:910px) {
+    .experienciaImg1 {
+        width: 24rem;
+        height: 18rem;
+        margin-top: 33px;
+    }
+    .experienciaCont {
+        margin-top: -4rem;
+    }
+}
+
+@media screen and (max-width:776px) {
+    .experiencia {
+        grid-template-columns: 100%;
+    }
+    .experienciaCont {
+        width: 90%;
+        height: calc(44rem - 13rem);
+        margin-top: -4rem;
+    }
+    .sendRegistro {
+        width: 298px;
+        margin-left: 1rem;
+    }
+    .registroImg {
+        width: 302px;
+        height: 283px;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:776px) {
+    
+    .experienciaCont {
+        grid-template-columns: 100%;
+    }
+}
+
 
 
 
