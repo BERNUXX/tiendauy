@@ -1,6 +1,7 @@
 #Tiendauy
-Pagina con Css, Sass y Bootstrap 
-Imagenes compimidas .png .jpg
+Proyecto CoderHouse by:Bernardo Rodriguez
+Pagina con Css y Bootstrap 
+Imagenes comprimidas .png .jpg
 Logos y vectores .svg
 
 
