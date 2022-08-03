@@ -21,11 +21,9 @@
 }
 
 .dark header {
-    display: grid;
-    grid-template-columns: 5% auto auto 5%;
-    padding: 0.625rem 0rem;
+    
     background-color: #1e3b9b;
-    justify-content: space-between;
+    
 }
 
 header div img {
@@ -283,23 +281,11 @@ label.bottom{
 }
 
 /* Mi Carrito */
-section .sinCompras {
-    display: grid;
-    grid-template-columns: 10% auto 10%;
-    height: 100vh;
-    justify-items: center;
-    align-items: center;
 
-}
 .dark section .sinCompras .sinComprasText {
-    width: 100%;
-    height: calc(100vh - 19rem);
-    border-radius: 5px;
-    margin-top: -14rem;
+   
     background: linear-gradient(90deg, rgb(36 73 115) 6%, rgb(17 31 66) 100%);
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-items: center;
+    
 
 }
 
@@ -404,20 +390,7 @@ section .sinCompras {
 .dark .textCat {
     background-color: #214380;
 }
-@media screen and (max-width:990px) {
-    .dark header {
-        display: flex;
-        padding: -1rem;
-        background-color: #1e3b9b;
-        align-items: center;
-        flex-direction: column;
-        }
-    .dark section .sinCompras .sinComprasText .texto {
-            width: 19rem;
-            height: auto;
-            margin-top: 1rem;}
 
-}
 @media screen and (max-width:574px) {
     header .nave {
         display: flex;
@@ -434,21 +407,8 @@ section .sinCompras {
 
 }
 
-@media screen and (max-width:990px) {
-    section .sinCompras .sinComprasText {
-        display: grid;
-        grid-template-columns: 100%;
-        margin-top: -40rem;
-    }
-    
-}
-@media screen and (max-width:990px) {
-    section .sinCompras {
-        display: grid;
-        grid-template-columns: 100%;
 
-    }
-}
+
 @media screen and (max-width:800px) { /* t */
     
     .pie-pagina .grupo-1{
@@ -563,14 +523,8 @@ section .sinCompras {
     .dark section .sinCompras .sinComprasText {
     display: grid;
     grid-template-columns: 100%;
-    margin-top: -40rem;}
-    section .sinCompras .carritoError .carrito {
-        display: flex;
-        width: 334px;
-        height: 287px;
-        margin-top: -52px;
-        margin-left: -56px;
-    } 
+    }
+    
  }
  
  @media screen and (max-width:425px) {
