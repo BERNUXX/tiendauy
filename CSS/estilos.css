@@ -727,7 +727,7 @@ section .sinCompras .sinComprasText .texto .textnc {
         height: 114vh;
     }
     .experienciaText {
-        margin-top: 0.5rem;
+        margin-top: 0.5rem; 
     }
     .experienciaCont {
         width: 90%;
