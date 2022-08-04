@@ -470,6 +470,7 @@ section .sinCompras .sinComprasText .texto .textnc {
     height: 117px;
     margin-top: 21px;
     resize: none;
+    font-family: arial;
 }
 .experienciaText #nombre {
     width: 290px;
