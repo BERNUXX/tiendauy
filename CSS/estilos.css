@@ -295,14 +295,17 @@ body {
     background-color: none;
 }
 #showPass:checked ~ #password {
+    -webkit-text-security: none;
+    
+}
+#showPass ~ #password {
     -webkit-text-security: circle;
     
     
 }
-#showPass ~ #password {
-    -webkit-text-security: none;
-    
-    
+.fa-solid.fa-eye {
+    font-size: 15px;
+    color:#0078AA;
 }
 
 
@@ -356,7 +359,6 @@ section .sinCompras .sinComprasText .texto .textnc {
     text-decoration: none;
 }
 
-/* CUENTANOS TU EXPERIENCIA */
 
 
 /* CATEGORIAS */
