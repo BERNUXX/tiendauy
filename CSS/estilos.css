@@ -306,6 +306,7 @@ body {
 .fa-solid.fa-eye {
     font-size: 15px;
     color:#0078AA;
+    cursor: pointer;
 }
 
 
@@ -727,6 +728,7 @@ section .sinCompras .sinComprasText .texto .textnc {
     .contentFlexCat {
         grid-template-columns: repeat(1,3fr);
     }
+    
  }
          
  
