@@ -243,6 +243,7 @@ body {
     border-radius: 3px;
     margin-top: 3px;
     outline: none;
+    width: 100%;
 }
 
 .registroImg {
@@ -288,9 +289,10 @@ body {
     position: absolute;
     align-items: center;
     justify-content: center;
-    height: 48px;
-    top: 352px;
-    left: 320px;
+    height: 59px;
+    /* left: 4px; */
+    /* right: 252px; */
+    /* margin-left: 17px; */
     color: #1e1e1c;
     background-color: none;
 }
@@ -305,8 +307,15 @@ body {
 }
 .fa-solid.fa-eye {
     font-size: 15px;
-    color:#0078AA;
+    margin-left: -40px;
+    /* right: 11px; */color:#0078AA;
     cursor: pointer;
+}
+.contCont {
+    width: 299px;
+    height: 39px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 
@@ -813,62 +822,6 @@ section .sinCompras .sinComprasText .texto .textnc {
         margin-top: 1rem;
     }
 }
-@media screen and (max-width:1440px) {
-    .showLabel {
-        display: flex;
-        position: absolute;
-        align-items: center;
-        justify-content: center;
-        height: 48px;
-        top: 363px;
-        left: 493px;
-        color: #1e1e1c;}
-}
-@media screen and (max-width:1024px) {
-    .showLabel {
-        
-        top: 363px;
-        left: 472px;}
-}
-@media screen and (max-width:768px) {
-    .showLabel {
-    top: 418px;
-    left: 331px;
-    }
-    
-}
-@media screen and (max-width:425px) {
-    .showLabel {
-        top: 288px;
-        left: 314px;
-    }
-    
-}
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
