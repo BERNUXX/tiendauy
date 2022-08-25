@@ -61,6 +61,22 @@ header .nave {
 .mec:hover {
     --clippy:  polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
+.dark #select_1 {
+    color: #000000;
+}
+
+.dark #select_2 {
+    color: #000000;
+}
+.dark #select_3 {
+    color: #000000;
+}
+.dark #select_4 {
+    color: #000000;
+}
+.dark #select_5 {
+    color: #000000;
+}
 
 
   #controlador {
@@ -119,13 +135,7 @@ label.bottom{
 
 .dark .bdc .tarjetas .card{
     background-color: rgb(71 101 131);
-    width: 10.875rem;
-    height: 17.500rem;
-    border-radius: 0.5rem;
     box-shadow: 0 0.125rem 20.125rem rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 1.25rem;
-    text-align: center;
     transition: all 0.25s;
 }
 
@@ -151,13 +161,11 @@ label.bottom{
 }
 
 .dark .bdc .tarjetas .card .price {
-    height: 56px;
     display: flex;
     font-weight: 800;
     font-size: 25px;
     text-decoration: none;
     color: #142749;
-    margin-top: -1.2rem;
     /* margin-right: 1rem; */  /* animation */
     transition: all 0.25s;
     cursor: default;
@@ -167,7 +175,6 @@ label.bottom{
 
 .dark .bdc .tarjetas .card .cart {
     width: 174px;
-    height: 280px;
     display: flex;
     flex-direction: column-reverse;
     border-radius: 8px;
@@ -480,24 +487,9 @@ label.bottom{
         cursor: pointer;
     }
     .dark .nav_menu {
-        position: absolute;
-        top: 96px;
-        padding: 19px;
         background:rgb(57 143 178 / 80%);
-        z-index: 99;
-        width: 100%;
-        left: 0px;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-        clip-path: circle(0% at 95% 9%);
-        transition: clip-path 0.5s cubic-bezier(0.37, 0.06, 0.2, 1.23);
     }
-    input:checked + .nav_menu {
-        clip-path: circle(150.1% at 95% 9%);
-      }
-    
+  
     
     #modo .iconModo {
         width: 3rem;

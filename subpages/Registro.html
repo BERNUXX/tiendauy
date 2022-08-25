@@ -41,7 +41,7 @@
             <input id="controlador" type="checkbox" class="nav_input" />
             <div class="nav_menu"> 
                 <a href= "../index.html" class="mec"> Inicio</a></li>
-                <a href="../subpages/Registro.html" class="mec"> Registrate</a></li>
+                <a href="../subpages/Registro.html" id="select_2" class="mec"> Registrate</a></li>
                 <a href="../subpages/Micarrito.html" class="mec"> Mi Carrito</a></li>
                 <a href="../subpages/Experiencia.html" class="mec"> Cuéntanos tu experiencia</a></li>
                 <a href="../subpages/Categorías.html" class="mec"> Categorías</a></li>
@@ -54,24 +54,24 @@
     </div>
 
     <div class="fondo"></div>
-    
-
+    <div class="registroText">
+     <h2> Registrate</h2>
+    </div>  
     <div class="fieldsetContenedor">
         <div>
-            <div class="registroText">
-                <h2> Registrate</h2>
+            <div >
             </div>
 
         <form name="contact2" netlify class="sendRegistro" action="Enviar.php" method="get">
 
             <div class="holderRegistro">
-                <input  class="holder" type="text" id="nombre" placeholder="Ingrese su nombre" required>
-            
-                <input class="holder" type="email" id="email" placeholder="Ingrese su correo" required>
+                <input  class="holder" type="text" id="nombre" placeholder="Nombre" required>
+                <input  class="holder" type="text" id="nombre" placeholder="Apellido" required>
+                <input class="holder" type="email" id="email" placeholder="Correo" required>
                 <div class="contCont">
                     <input type="checkbox" name="" id="showPass">
                     <label class="showLabel" for="showPass"> <i class="fa-solid fa-eye"></i></label>
-                    <input class="holder" type="text" id="password" placeholder="Cree su contraseña" required>
+                    <input class="holder" type="text" id="password" placeholder="Contrseña" required>
                 </div>
             </div> 
             <div class="sendHold">
